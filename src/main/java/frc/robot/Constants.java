@@ -19,4 +19,5 @@ public final class Constants {
     public static final int RIGHTMOTOR2 = 3;
     public static final int JOYSTICK = 0;
     public static final double AUTONOMOUS_TIME = 1;
+    public static final int  DRIVE_AUTON_SPEED = 1;
 }
