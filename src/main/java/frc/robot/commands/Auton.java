@@ -24,8 +24,9 @@ public class Auton extends CommandBase {
   @Override
   public void execute() {
     double currentTime = Timer.get();
-    while (Timer.get() - currentTime < m_time)
-      m_drivetrain.tankDrive(m_axis1, m_axis2);
+    while (Timer.get() - currentTime < m_time) {
+      m_drivetrain.tankDrive(Constants.DRIVE_AUTON_SPEED);
+    }
   }
 
   // Called once the command ends or is interrupted.
